@@ -1,0 +1,29 @@
+[+] YOLOv3 en tiny-YOLO op de Pi
+	YOLO is een erg snel en redelijk accuraat algoritme,
+	echter zegt de webpagina (non-qoutable source helaas) dat de
+	load die YOLO met zich meedraagt te groot is om native op
+	de Pi te draaien.
+
+	Daarentegen werkt tiny-YOLO wel erg goed op de Pi. Er wordt
+	dan wel in alle gevallen die ik op het web tegenkom gebruik
+	gemaakt van extra hardware en vaak is dat in de vorm van een
+	Intel NCS (Neural Compute Stick). Een stukje hardware dat 
+	geoptimaliseerd is voor neurale netwerken met USB interface.
+
+	Deze hardware kost +/- € 100,-
+	Ik ben bang dat dit voor ons onderzoek te duur gaat worden.
+
+[+] YOLOv3 op de desktop met Pi als stream server
+	Een andere gedachte die wij hebben en die mij goed 
+	geschikt lijkt om te onderzoeken is; Mocht
+	het blijken dat wij zonder de NCS een te slechte performance
+	halen, dat wij dan de Pi puur inzetten als apparaat
+	dat de beelden ontvangt maar dan niet zelf de object-
+	detectie uitvoert.
+
+	Aangezien het gemonteerd zou worden op een onderwater
+	robot is dit een te begrijpen oplossing. De Pi filmt
+	wel alles wat hij ziet maar gebruikt eventueel VLC-server
+	om de frames door te sturen en de object-detectie kan
+	dan met YOLO uitgevoert worden op een laptop/desktop.
+
