@@ -27,3 +27,24 @@
 	om de frames door te sturen en de object-detectie kan
 	dan met YOLO uitgevoert worden op een laptop/desktop.
 
+[+] Opdelen van stappen in de object detection pipeline
+	Na overleg met Nathan Houwaart van Team 1
+	hun researchpaper in handen gekregen en doorgelezen.
+
+	Paper gaat over opdelen van de verschillende stappen
+	binnen de object recognition pipeline, i.e. kunnen
+	wij wel een aantal stappen uitvoeren op de Pi
+	alvorens dit naar de server te sturen die de daadwerkelijk
+	recognition uitvoert?
+
+	Mijn gedachte hierover blijft nog steeds dat het handig
+	is een VLC server (of dergelijke) te starten op de Pi
+	om een datastream te openen naar onzelf, eventueel te
+	cachen van images op de SD-kaart van de Pi,
+	te comprimeren voor lichtere netwerkload met een
+	snel en efficient compressie-algo (zlib?) en
+	de decompression en object detectie uit te voeren
+	op een centrale server (laptop).
+
+	Dit alles met het oogpunt om de nieuwe bottleneck,
+	de bandbreedte, nog meer te ontlasten.
