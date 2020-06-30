@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dataset</folder>
+	<filename>DSCN1987_C.jpg</filename>
+	<path>D:\Cris\Documents\HBO-ICT\labelimg\Dataset\DSCN1987_C.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>766</width>
+		<height>394</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fish</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>20</xmin>
+			<ymin>13</ymin>
+			<xmax>746</xmax>
+			<ymax>391</ymax>
+		</bndbox>
+	</object>
+</annotation>

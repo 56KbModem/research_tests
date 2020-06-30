@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dataset</folder>
+	<filename>DSCN1073_C-Copy.jpg</filename>
+	<path>D:\Cris\Documents\HBO-ICT\labelimg\Dataset\DSCN1073_C-Copy.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>872</width>
+		<height>442</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fish</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>19</xmin>
+			<ymin>25</ymin>
+			<xmax>828</xmax>
+			<ymax>415</ymax>
+		</bndbox>
+	</object>
+</annotation>

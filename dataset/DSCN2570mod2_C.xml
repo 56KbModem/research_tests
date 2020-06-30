@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dataset</folder>
+	<filename>DSCN2570mod2_C.jpg</filename>
+	<path>D:\Cris\Documents\HBO-ICT\labelimg\Dataset\DSCN2570mod2_C.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>705</width>
+		<height>336</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fish</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>26</ymin>
+			<xmax>685</xmax>
+			<ymax>311</ymax>
+		</bndbox>
+	</object>
+</annotation>

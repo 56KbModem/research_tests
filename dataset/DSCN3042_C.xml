@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dataset</folder>
+	<filename>DSCN3042_C.JPG</filename>
+	<path>D:\Cris\Documents\HBO-ICT\labelimg\Dataset\DSCN3042_C.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>367</width>
+		<height>210</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fish</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>4</ymin>
+			<xmax>357</xmax>
+			<ymax>200</ymax>
+		</bndbox>
+	</object>
+</annotation>

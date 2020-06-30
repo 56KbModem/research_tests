@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dataset</folder>
+	<filename>Set2_DSCN4012.JPG_0.jpg</filename>
+	<path>D:\Cris\Documents\HBO-ICT\labelimg\Dataset\Set2_DSCN4012.JPG_0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1536</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fish</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1213</xmin>
+			<ymin>645</ymin>
+			<xmax>1646</xmax>
+			<ymax>884</ymax>
+		</bndbox>
+	</object>
+</annotation>
