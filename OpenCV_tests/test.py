@@ -2,30 +2,36 @@
 import numpy as np
 import cv2
 
-vid_stream = "http://192.168.1.5:8080"
-cap = cv2.VideoCapture(vid_stream)
-frame_count = 0
 
-if not cap.isOpened():
-    print("[!] cannot open stream\n[!] exiting...")
-    exit()
+def get_stream(cap, vid_stream):
+	while True:
+		ret, frame = cap.read()
+		if not ret:
+			# we do need to reopen the capture...
+			print("[!] cannot receive frame (stream ended?)\n[!] reopening...")
+			cap = cv2.VideoCapture(vid_stream)
+			ret, frame = cap.read()
 
-while True:
-    ret, frame = cap.read()
-    frame_count += 1
-    if not ret:
-        print("[!] cannot receive frame (stream ended?)\n[!] exiting...")
-        break
+		cv2.imshow('webcam',frame)
+		if cv2.waitKey(1) & 0xFF == ord('q'):
+			print("[!] user abort of stream")
+			break
 
-    if frame_count == cap.get(cv2.CAP_PROP_FRAME_COUNT):
-        frame_count = 0
-        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    cv2.imshow('webcam',gray)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+
+if __name__ == "__main__":
+	vid_stream = "http://192.168.1.5:8080"
+	cap = cv2.VideoCapture(vid_stream)
+
+	if not cap.isOpened():
+		print("[!] cannot open stream at {}".format(vid_stream))
+		print("[!] exiting...")
+		exit()
+	else:
+		print("[!] starting stream at {}".format(vid_stream))
+		get_stream(cap, vid_stream)
+
 
 cap.release()
 cv2.destroyAllWindows()
