@@ -4,11 +4,18 @@ import cv2
 
 
 def get_stream(cap, vid_stream):
+	frame_count = 0
 	while True:
 		ret, frame = cap.read()
+		fps = cap.get(cv2.CAP_PROP_FPS)
+		frame_count += 1
 		if not ret:
 			# we do need to reopen the capture...
 			print("[!] cannot receive frame (stream ended?)\n[!] reopening...")
+			print("[+] FRAME COUNT: {}".format(frame_count))
+			print("[+] FPS: {}".format(round(fps,2)))
+			print("[+] DURATION: {}s".format(round(frame_count / fps, 2)))
+			frame_count = 0
 			cap = cv2.VideoCapture(vid_stream)
 			ret, frame = cap.read()
 
