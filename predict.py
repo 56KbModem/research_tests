@@ -44,6 +44,9 @@ def _main_(args):
         while True:
             ret_val, image = video_reader.read()
             if ret_val == True: images += [image]
+			else:
+				video_reader = cv2.VideoCapture(inputh_path)
+				ret, frame = video_reader.read()
 
             if (len(images)==batch_size) or (ret_val==False and len(images)>0):
                 batch_boxes = get_yolo_boxes(infer_model, images, net_h, net_w, config['model']['anchors'], obj_thresh, nms_thresh)
